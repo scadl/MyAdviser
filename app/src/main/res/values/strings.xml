@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyAdviser</string>
+    <string name="lblFind">Get advice types</string>
+    <string name="lblWait">N\/A: </string>
+    <string name="lblWait2">Waiting...</string>
+    <string-array name="dpBox">
+        <item> - No Sections - </item>
+    </string-array>
+</resources>
