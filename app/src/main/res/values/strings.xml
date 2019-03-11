@@ -1,8 +1,11 @@
 <resources>
     <string name="app_name">MyAdviser</string>
-    <string name="lblFind">Get advice types</string>
+    <string name="lblFind">Let\'s start!</string>
     <string name="lblWait">N\/A: </string>
     <string name="lblWait2">Waiting...</string>
+    <string name="lblWelcom1">Wellcome to</string>
+    <string name="lblWelcom2">My Adviser</string>
+    <string name="lblWelcom3">(Light, db-based, book)</string>
     <string-array name="dpBox">
         <item> - No Sections - </item>
     </string-array>

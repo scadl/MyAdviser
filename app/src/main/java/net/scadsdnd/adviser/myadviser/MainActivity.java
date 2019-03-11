@@ -1,27 +1,10 @@
 package net.scadsdnd.adviser.myadviser;
 
-import android.content.Context;
-import android.database.Cursor;
-import android.database.SQLException;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.database.sqlite.*;
-import android.text.Html;
-import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.Spinner;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.ArrayList;
-import java.util.List;
+import android.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,8 +14,19 @@ public class MainActivity extends AppCompatActivity {
         // Move here anything should happen just after app started.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
     }
 
+    // This function is called whe user clicks 'let's start'
+    public void getSections(View vw){
+        // This will create new intent from our activity class
+        Intent intSec = new Intent(this, SectionsActivity.class);
+        // And this will actually fire up our new activity
+        startActivity(intSec);
+    }
+
+    /*
 
     // This function is called whe user clicks 'get advices sections'
     public void getSections(View vw){
@@ -126,5 +120,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnGd =(Button) findViewById(R.id.btnGetData);
         btnGd.setVisibility(View.INVISIBLE);
     }
+
+    */
 
 }
