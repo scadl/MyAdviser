@@ -30,7 +30,8 @@ public class CardActivity extends AppCompatActivity {
         String[] secFields = {"id", "Title", "Body", "Sections"};
         // In this query we just added WHERE section, to filter our data by selected Section id.
         Cursor scadCurs = db.query(
-                scadSQLite.TableAdvices, secFields,
+                scadSQLite.TableAdvices,
+                secFields,
                 "Sections=?",
                 new String[]{theID},
                 null,
